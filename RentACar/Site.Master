@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="RentACar.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Rent a Car</title>
+    <link href="Content/site.css" rel="stylesheet" />
+
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+    <form runat="server">
+    <div class="page-wrapper">
+
+        <header class="site-header">
+            <div class="logo">🚗 Rent-a-Car</div>
+            <nav class="main-nav">
+                <a href="Default.aspx">Početna</a>
+                <a href="Vozila.aspx">Vozila</a>
+                <a href="Klijenti.aspx">Klijenti</a>
+                <a href="Iznajmljivanje.aspx">Iznajmljivanje</a>
+                <a href="Izvjestaji.aspx">Izvještaji</a>
+            </nav>
+        </header>
+
+        <main class="content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </main>
+
+        <footer class="site-footer">
+            <p>© 2026 Rent-a-Car Web Aplikacija</p>
+        </footer>
+
+    </div>
+</form>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/Scripts/bootstrap.js") %>
+    </asp:PlaceHolder>
+</body>
+</html>
