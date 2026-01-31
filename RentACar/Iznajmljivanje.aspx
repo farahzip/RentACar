@@ -9,27 +9,66 @@
     </section>
 
     <!-- Rental Form Section -->
-    <section class="feature-card">
-        <label>Odaberite klijenta</label>
-        <select class="input">
-            <option>Ime Prezime</option>
-            <option>Ime Prezime</option>
-        </select>
+    <section class="features">
+    <div class="feature-card">
+        <h3>Pretraga rezervacija</h3>
 
-        <label>Odaberite vozilo</label>
-        <select class="input">
-            <option>Audi A3 (2020) - Dostupno</option>
-            <option>BMW 320i (2019) - Dostupno</option>
-        </select>
+        Klijent (ime/prezime):
+        <asp:TextBox ID="txtSearchKlijent" runat="server" MaxLength="45" />
 
-        <label>Datum od</label>
-        <input type="date" class="input" />
+        Vozilo (marka/model):
+        <asp:TextBox ID="txtSearchVozilo" runat="server" MaxLength="25" />
 
-        <label>Datum do</label>
-        <input type="date" class="input" />
+        Datum od:
+        <asp:TextBox ID="txtSearchOd" runat="server" TextMode="Date" />
+
+        Datum do:
+        <asp:TextBox ID="txtSearchDo" runat="server" TextMode="Date" />
 
         <br /><br />
-        <button class="btn">Kreiraj rezervaciju</button>
+
+        <asp:Button ID="btnSearchRez" runat="server" Text="Pretraži" OnClick="btnSearchRez_Click" CausesValidation="False" />
+        <asp:Button ID="btnResetRez" runat="server" Text="Reset" OnClick="btnResetRez_Click" CausesValidation="False" />
+
+        <br /><br />
+        <asp:GridView ID="gvRezervacija" runat="server" AutoGenerateColumns="true" CssClass="table"/>
+        </div>
+
+    <div class="feature-card">
+        <h3>Nova rezervacija</h3>
+        <asp:Label ID="lblError" runat="server" ForeColor="Red" /> 
+        <br />
+        Klijent:
+        <asp:DropDownList ID="ddlKlijent" runat="server" />
+        <asp:RequiredFieldValidator ControlToValidate="ddlKlijent"
+            InitialValue="" Text="Odaberite klijenta!" ForeColor="Red" runat="server" />
+        <br /><br />
+
+        Vozilo:
+        <asp:DropDownList ID="ddlVozilo" runat="server" />
+        <asp:RequiredFieldValidator ControlToValidate="ddlVozilo"
+            InitialValue="" Text="Odaberite vozilo!" ForeColor="Red" runat="server" />
+        <br /><br />
+
+        Datum od:
+        <asp:TextBox ID="txtOd" runat="server" TextMode="Date" />
+        <asp:RequiredFieldValidator ControlToValidate="txtOd"
+            Text="Datum početka je obavezan!" ForeColor="Red" runat="server" />
+        <br /><br />
+
+        Datum do:
+        <asp:TextBox ID="txtDo" runat="server" TextMode="Date" />
+        <asp:RequiredFieldValidator ControlToValidate="txtDo"
+            Text="Datum završetka je obavezan!" ForeColor="Red" runat="server" />
+        <br /><br />
+
+        <asp:Button ID="btnRezervisi"
+            runat="server"
+            Text="Rezerviši"
+            OnClick="btnRezervisi_Click" />
+
+        <br /><br />
+        </div>
     </section>
 
 </asp:Content>

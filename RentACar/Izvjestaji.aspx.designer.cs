@@ -11,124 +11,97 @@ namespace RentACar
 {
 
 
-    public partial class Iznajmljivanje
+    public partial class Izvjestaji
     {
 
         /// <summary>
-        /// txtSearchKlijent control.
+        /// lblBrojKlijenataLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSearchKlijent;
+        protected global::System.Web.UI.WebControls.Label lblBrojKlijenataLabel;
 
         /// <summary>
-        /// txtSearchVozilo control.
+        /// lblBrojKlijenata control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSearchVozilo;
+        protected global::System.Web.UI.WebControls.Label lblBrojKlijenata;
 
         /// <summary>
-        /// txtSearchOd control.
+        /// lblBrojVozilaLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSearchOd;
+        protected global::System.Web.UI.WebControls.Label lblBrojVozilaLabel;
 
         /// <summary>
-        /// txtSearchDo control.
+        /// lblBrojVozila control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSearchDo;
+        protected global::System.Web.UI.WebControls.Label lblBrojVozila;
 
         /// <summary>
-        /// btnSearchRez control.
+        /// lblDostupnaLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearchRez;
+        protected global::System.Web.UI.WebControls.Label lblDostupnaLabel;
 
         /// <summary>
-        /// btnResetRez control.
+        /// lblDostupna control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnResetRez;
+        protected global::System.Web.UI.WebControls.Label lblDostupna;
 
         /// <summary>
-        /// gvRezervacija control.
+        /// lblZauzetaLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvRezervacija;
+        protected global::System.Web.UI.WebControls.Label lblZauzetaLabel;
 
         /// <summary>
-        /// lblError control.
+        /// lblZauzeta control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblError;
+        protected global::System.Web.UI.WebControls.Label lblZauzeta;
 
         /// <summary>
-        /// ddlKlijent control.
+        /// lblZaradaLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlKlijent;
+        protected global::System.Web.UI.WebControls.Label lblZaradaLabel;
 
         /// <summary>
-        /// ddlVozilo control.
+        /// lblZarada control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlVozilo;
-
-        /// <summary>
-        /// txtOd control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtOd;
-
-        /// <summary>
-        /// txtDo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDo;
-
-        /// <summary>
-        /// btnRezervisi control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRezervisi;
+        protected global::System.Web.UI.WebControls.Label lblZarada;
     }
 }
