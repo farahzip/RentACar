@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="RentACar.SiteMaster" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="RentACar.SiteMaster" %>
 
 <!DOCTYPE html>
 
@@ -30,6 +30,7 @@
                 <a href="Klijenti.aspx">Klijenti</a>
                 <a href="Iznajmljivanje.aspx">Iznajmljivanje</a>
                 <a href="Izvjestaji.aspx">Izvještaji</a>
+                <a href="Contact.aspx">Kontakt</a> 
             </nav>
         </header>
 
